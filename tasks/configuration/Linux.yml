@@ -54,7 +54,7 @@
     - solr_auth_configure
     - solr_auth_type is defined
     - solr_version is version('7.0.0', '>=')
-    - change_default_password
+    - solr_change_default_password
 
 - name: Create admin user via API
   uri:
@@ -74,7 +74,7 @@
     - solr_auth_configure
     - solr_auth_type is defined
     - solr_version is version('7.0.0', '>=')
-    - change_default_password
+    - solr_change_default_password
   notify:
     - "restart solr linux"
 
@@ -96,6 +96,6 @@
     - solr_auth_configure
     - solr_auth_type is defined
     - solr_version is version('7.0.0', '>=')
-    - change_default_password
+    - solr_change_default_password
   notify:
     - "restart solr linux"
