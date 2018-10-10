@@ -86,6 +86,8 @@ Requirements
   - `solr_logs_dir` - path to store logs
     default: `{{ solr_base_path }}/logs`
 # https://lucene.apache.org/solr/guide/7_1/enabling-ssl.html
+  - `solr_ssl_configure` - configure SSL
+    default: `true`
   - `solr_ssl_key_size` - certificate key size
     default: 4096
   - `overrride_solr_ssl_key_store_path` - directory to store keystore
