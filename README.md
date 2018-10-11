@@ -8,6 +8,7 @@ This role:
   - Installs Solr standalone on Centos 7, Ubuntu or Windows host.
   - Configures SSL for Solr 7.0 and later
   - Configures Solr
+  - Supported Solr versions: 6.x - 7.x. The latest tested is 7.1.0
 
 For additional configuration, such as master or slave mode use roles:
   - solr-master (lean-delivery.ansible-role-solr-master)
@@ -50,7 +51,7 @@ Requirements
   - `solr_change_default_password` - to change default password (will be solr/SolrRocks)
     default: `True`
   - `solr_auth_configure` - Enable authentication
-    default: `true`
+    default: `True`
   - `solr_auth_type` - authentication type
     default: `basic`
   - `solr_auth_user` - default solr user
@@ -87,7 +88,7 @@ Requirements
     default: `{{ solr_base_path }}/logs`
 # https://lucene.apache.org/solr/guide/7_1/enabling-ssl.html
   - `solr_ssl_configure` - configure SSL
-    default: `true`
+    default: `True`
   - `solr_ssl_key_size` - certificate key size
     default: 4096
   - `overrride_solr_ssl_key_store_path` - directory to store keystore
